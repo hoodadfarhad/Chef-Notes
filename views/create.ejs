@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+
+
+    <form action="/submit" method="POST">
+
+        <div id="createBody">
+        <!-- Title Input (Smaller Textarea) -->
+        <label for="title"><em>Food Name</em></label>
+        <textarea id="title" name="title" rows="1" cols="50" placeholder="Enter title here" required><%= updateNamePreFill %></textarea>
+      
+        <br>
+      
+        <!-- Notes Input (Larger Textarea) -->
+        <label for="notes"><em>Notes:</em></label>
+        <textarea id="notes" name="notes" rows="8" cols="50" placeholder="Enter your notes here" required><%= updateNotePreFill %></textarea>
+      
+        <br><br>
+      
+        <!-- Submit Button -->
+        <button type="submit" id="contactSendBtn">Save</button>
+    </div>
+      </form>
+    
+
+      <%- include("partials/footer.ejs") %>

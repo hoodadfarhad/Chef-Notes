@@ -1,0 +1,147 @@
+<%- include("partials/header.ejs") %>
+
+
+<% if(locals.readRequest != -1){ %>
+    <% console.log("readRequest is: ") %>
+    <% console.log(locals.readRequest) %>
+    
+    
+      <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-header border-bottom-0">
+                <h1 class="modal-title fs-5"><%=foodNameArray[readRequest]%></h1>
+              </div>
+              <div class="modal-body py-0">
+                <p><%=foodNotesArray[readRequest]%></p>
+              </div>
+              <div class="modal-footer flex-column align-items-center w-100 gap-2 pb-3 border-top-0">
+                <a href="/">
+                <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Close</button>
+            </a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+<% }; %>
+
+ <div class="mainDiv"> <!--the whole main content view div -->
+
+
+    
+
+
+
+<%   if (locals.foodNameArray.length !== 0){ %>
+    <div class="container ">
+
+
+    <ol>
+
+        <% for (var i = 0; i < foodNameArray.length; i++) {%>
+     <div class="marginCard">
+    <li>
+    <div class="foodCard" id="foodCardID <%= i %>">
+            <ul>
+                <li class="foodName"><%= foodNameArray[i] %></li>
+                 <% if (foodNotesArray[i].length <= 80){ %>
+                    <li >  <%= foodNotesArray[i] %></li> 
+                <% } else { %> 
+                    <li>  <%= foodNotesArray[i].substring(0, 80) %>...</li>
+                <% } %>
+
+            </ul>
+           
+
+
+        <div class="btn-group">
+
+    <div class="dropleft">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           more
+        </button>
+        <div class="dropdown-menu dropdownMenuButton" aria-labelledby="dropdownMenuButton">
+            <form action="/update" method="post">
+                <input type="hidden" name="index" value="<%= i %>">
+                <button type="submit" class="btn btn-warning">Edit</button>
+            </form>
+            <form action="/delete" method="post">
+                <input type="hidden" name="index" value="<%= i %>">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          
+        </div>
+    </div>
+
+
+    <% if (foodNotesArray[i].length > 80){ %>
+        
+        <div class="readMoreClass">
+            <form action="/readMore" method="post"> 
+                <input type="hidden" name="index" value="<%= i %>">
+                <button type="submit" class="btn btn-outline-secondary" id="readMore">Read More</button>
+            </form> 
+        </div>
+
+    <% } %>
+    
+        
+        </div>
+    </div>     
+        
+    </li>
+
+
+
+
+    
+
+
+       </div> 
+
+      
+
+
+        <%     } %>
+    </ol>
+
+
+
+    
+
+
+
+
+</div>
+
+
+
+
+    <% } else { %>
+<h1> Start Posting Notes!</h1>
+<% } %>
+
+
+
+
+
+
+
+
+
+
+<div class="newPost">
+    <a href="/create" style="text-decoration: none;">
+        <div class="" style="text-align: center;margin-top:5%">
+            <button class="icon-btn">
+                <span class="btn-txt">+</span>
+            </button>
+          </div>
+      </a>
+      
+</div>
+
+
+</div>
+<%- include("partials/footer.ejs") %>

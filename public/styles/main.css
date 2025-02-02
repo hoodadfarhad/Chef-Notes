@@ -1,0 +1,197 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none; /* Removes bullets */
+    
+}
+
+ul li {
+   font-size: large;
+    margin-bottom: 8px; /* Adds space between list items */
+}
+
+ol li::marker {
+    font-size: 2em;
+    position: relative;
+    top: -3px; /* Moves the number up */
+}
+
+
+body {
+    background-color: aqua;
+}
+
+#logo{
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+#logo > p{
+    margin-bottom: 0px;
+}
+
+#search {
+
+    margin-right: 10%;
+
+
+}
+
+.mainDiv{
+    position: relative;
+    min-height: 70vh;
+    height:auto;
+    
+}
+.newPost {
+
+    position: fixed;
+    right: 10%;
+    bottom: 20%;
+    
+    
+
+}
+
+
+
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+    display: flex;  /* Enables flexbox */
+    align-items: center; /* Vertically centers text */
+    justify-content: center; /* Horizontally centers text */
+}
+
+.icon-btn:hover {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.btn-txt {
+    opacity: 1;
+    transition: opacity 0.2s;
+    font-size: 38px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+
+
+ 
+#createBody{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 25% 0px 25%;
+    
+
+}
+
+#createBody > button {
+    align-self: center;
+    width: 35%;
+    border: 3px solid black;
+}
+
+#createBody > label {
+    display: flex;
+    align-self: flex-start;
+}
+
+#createBody > textarea {
+    width: 100%;
+}
+
+
+
+
+.marginCard{
+    padding: 0px 0px 0px 45px;
+    margin: 10px 0px 0px 0px;
+    background-color: white;
+    border: 1px #cdcdcd solid;
+    border-radius: 10px;
+}
+
+.foodCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px 15px 10px;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0px 10% 0px 10%;
+}
+
+.btn-group button {
+    width: 150px;
+    height: 40px;
+}
+
+
+.dropdownMenuButton{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+        background-color: #6c757d        !important; /* Change to any color */
+        border: 1px solid black !important; /* Add a border */
+    width: 150px !important; /* Match the button width */
+    min-width: unset !important; /* Remove Bootstrap's default width */
+    text-align: center; /* Center text inside buttons */
+    padding: 5px !important; /* Remove extra padding */   
+}
+
+.dropdownMenuButton button {
+    width: 100%; /* Makes buttons fill the dropdown */
+}
+
+.dropdownMenuButton form {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+#contactP{
+    text-align: center;
+}
+
+#contactSubmit{
+   display: flex;
+   justify-content: center;
+    margin: 9px;
+    
+}
+
+#modalSheet {
+    position: fixed !important;
+    z-index: 1 !important;
+   
+    top: 0%;
+    left: 0%;
+    display: flex !important;  /* Ensures visibility */
+    align-items: center;  /* Centers content vertically */
+    justify-content: center;  /* Centers content horizontally */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay */
+}
+
+.modal-dialog{
+    min-width: 30% !important;
+}
