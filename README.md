@@ -29,7 +29,9 @@ The Food Notes App is a simple web application that allows users to create, read
 ![Screenshot 2025-03-14 at 5 17 49 PM](https://github.com/user-attachments/assets/1678eb11-293d-4532-88ab-1b076c10c97b)
 
 
+⚠️ **Attention**
 
+This application is for practice purposes only and does not use a database. All data is stored in memory, meaning that when the server refreshes, all notes will be lost.
 
 **Technologies Used** 🛠️
 
