@@ -7,15 +7,15 @@ The Food Notes App is a simple web application that allows users to create, read
 
 **Features**
 
-Add Food Notes: Users can create and save food-related notes.
+📖 Add Food Notes: Users can create and save food-related notes. 
 
-View Notes: The main page displays a list of food notes with truncated descriptions.
+🔍 View Notes: The main page displays a list of food notes with truncated descriptions.
 
-Read More Modal: If a note is longer than 80 characters, a 'Read More' button appears to display the full content in a modal.
+🎨 Read More Modal: If a note is longer than 80 characters, a 'Read More' button appears to display the full content in a modal.
 
-Edit Notes: Users can edit existing notes.
+📝 Edit Notes: Users can edit existing notes.
 
-Delete Notes: Users can remove notes from the list.
+🗑️ Delete Notes: Users can remove notes from the list.
 
 ![Screenshot 2025-03-14 at 5 16 52 PM](https://github.com/user-attachments/assets/1c202e58-e703-4b86-952a-c071b85e0786)
 
@@ -31,7 +31,7 @@ Delete Notes: Users can remove notes from the list.
 
 
 
-**Technologies Used**
+**Technologies Used** 🛠️
 
 Node.js: Backend runtime environment
 
@@ -43,7 +43,7 @@ Bootstrap: For styling and UI components
 
 CSS: Custom styling for UI enhancements
 
-**Installation**
+**Installation** 🚀
 
 Prerequisites
 
@@ -68,7 +68,7 @@ Open the app in your browser:
     http://localhost:3000
 
 
-Usage
+**Usage** 🚀
 
 - Adding a New Food Note
 
@@ -96,6 +96,8 @@ Usage
 
 - Select Delete to remove the note.
 
-**Contributing**
+⚡ Contact
 
-Feel free to fork the project and submit pull requests with improvements!
+For questions or feedback, feel free to reach out!
+📧 Email: hoodad.farhad@gmail.com
+🔗 GitHub: hoodadfarhad
