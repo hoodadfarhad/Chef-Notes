@@ -57,12 +57,12 @@
 
         <div class="btn-group">
 
-    <div class="dropleft">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="dropleft" >
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #889E73;">
            more
         </button>
-        <div class="dropdown-menu dropdownMenuButton" aria-labelledby="dropdownMenuButton">
-            <form action="/update" method="post">
+        <div class="dropdown-menu dropdownMenuButton" aria-labelledby="dropdownMenuButton" >
+            <form action="/update" method="post" >
                 <input type="hidden" name="index" value="<%= i %>">
                 <button type="submit" class="btn btn-warning">Edit</button>
             </form>

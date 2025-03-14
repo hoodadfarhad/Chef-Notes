@@ -19,8 +19,13 @@ ol li::marker {
 }
 
 
-body {
-    background-color: aqua;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 
 #logo{
@@ -63,7 +68,7 @@ body {
 .icon-btn {
     width: 50px;
     height: 50px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid #F4D793;
     background: white;
     border-radius: 25px;
     overflow: hidden;
@@ -95,7 +100,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0px 25% 0px 25%;
+    margin: 50px 25% 0px 25%;
+    background-color: #FFF6DA;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5%;
     
 
 }
@@ -121,7 +129,7 @@ body {
 .marginCard{
     padding: 0px 0px 0px 45px;
     margin: 10px 0px 0px 0px;
-    background-color: white;
+    background-color: #FFF6DA;
     border: 1px #cdcdcd solid;
     border-radius: 10px;
 }
@@ -131,6 +139,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 15px 10px 15px 10px;
+}
+
+.foodName{
+    font-size: x-large;
 }
 
 .btn-group{
@@ -151,7 +163,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-        background-color: #6c757d        !important; /* Change to any color */
+        background-color: #FFF6DA        !important; /* Change to any color */
         border: 1px solid black !important; /* Add a border */
     width: 150px !important; /* Match the button width */
     min-width: unset !important; /* Remove Bootstrap's default width */
@@ -168,9 +180,13 @@ body {
     margin-top: 5px;
 }
 
+#contactBody{
+    margin-top: 40px;
+}
 
 #contactP{
     text-align: center;
+    font-size: larger;
 }
 
 #contactSubmit{
@@ -183,15 +199,38 @@ body {
 #modalSheet {
     position: fixed !important;
     z-index: 1 !important;
-   
+   background-color: #FFF6DA;
     top: 0%;
     left: 0%;
-    display: flex !important;  /* Ensures visibility */
-    align-items: center;  /* Centers content vertically */
-    justify-content: center;  /* Centers content horizontally */
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay */
+    display: flex !important; 
+    align-items: center;  
+    justify-content: center; 
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 .modal-dialog{
     min-width: 30% !important;
+}
+
+
+
+.footerStyle {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 47%;
+    background-color: #F4D793;
+    position: fixed;
+}
+
+footer {
+    width: 100%;
+}
+
+form label{
+    font-size: x-large;
+}
+
+#readMore{
+    color: black;
 }
