@@ -31,7 +31,7 @@ The Food Notes App is a simple web application that allows users to create, read
 
 ⚠️ **Attention**
 
-This application is for practice purposes only and does not use a database. All data is stored in memory, meaning that when the server refreshes, all notes will be lost.
+This application is for practice purposes only and **does not use a database**. All data is stored in memory, meaning that when the server refreshes, all notes will be lost.
 
 **Technologies Used** 🛠️
 
